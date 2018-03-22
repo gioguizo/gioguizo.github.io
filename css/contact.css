@@ -1,0 +1,265 @@
+ /*font*/
+ 
+ @import url(http://fonts.googleapis.com/css?family=Lato|Bree+Serif);
+
+ /*Body*/
+
+body{
+	font:15px/1.5 'Lato', sans-serif;
+	padding: 0;
+	margin: 0;
+	background-color: #f4f4f4;
+}
+
+/*Global*/
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bree Serif', serif;
+}
+
+.container{
+	width:80%;
+	margin:auto;
+	overflow:hidden;
+}
+
+ul{
+	margin:0;
+	padding:0;
+}
+
+.dark{
+  padding:15px;
+  background:#63647F;
+  color:#ffffff;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+/*header*/
+
+header{
+	background: #63647F;
+	color: #ffffff;
+	padding-top:30px;
+	min-height:70px;
+	border-bottom:#C6C9FF 3px solid;
+}
+
+header a{
+	color:#ffffff;
+	text-decoration: none;
+	font-size:16px;
+}
+
+header li{
+	float:left;
+	display:inline;
+	padding:0 20px 0 20px;
+}
+
+header #branding{
+	/*float:left;*/
+	/*test*/
+	text-indent: -9000px;
+    background: url('../img/GM_Logo.png') no-repeat top left;
+    background-size: 45px;
+    float: left;
+}
+
+header #branding h1{
+	margin: 0;
+}
+
+header nav{
+	float:right;
+	margin-top: 10px;
+}
+
+header .current a{
+	color:#C6C9FF;
+	font-weight: bold;
+}
+
+header a:hover{
+	color: #9FA1CC;
+	font-weight: bold;
+}
+
+/*Showcase*/
+
+#showcase{
+	min-height:400px;
+	background: url('../img/showcase.jpeg') no-repeat 0 -300px;
+	text-align:center;
+	color:#ffffff;
+	/*background-size: cover;*/
+}
+
+#showcase h1{
+	margin-top: 100px;
+	font-size: 55px;
+	margin-bottom: 10px;
+}
+
+/*Boxes*/
+
+#boxes{
+	margin-top: 20px;
+}
+
+#boxes .box{
+	float:left;
+	width:30%;
+	padding: 10px;
+	text-align:center;
+
+}
+/*Main Column (main-col)*/
+article#main-col{
+	float:left;
+	width:65%;
+}
+
+/*Sidebar*/
+
+aside#sidebar{
+	float:right;
+	width:30%;
+	text-align:center;
+}
+
+aside#sidebar a{
+	text-decoration: none;
+	color:#ffffff;
+}
+/*Form*/
+
+.button_1{
+  height:40px;
+  background:#1c1c38;
+  border:0;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#ffffff;
+  width:20%;
+  border-radius:5px;  
+  margin-top: 10px;
+}
+
+article#main-col .contact input{
+  width:55%;
+  padding:5px;
+  height:25px;
+  margin: 8px 0;
+  border-radius: 5px;
+  border:none;
+  font-size: 15px;
+}
+
+article#main-col .contact textarea{
+	width:55%;
+    padding:5px;
+  height:100px;
+  border-radius: 5px;
+  border:none; 
+  font-size: 15px;
+}
+
+
+
+/*Footer*/
+footer{
+	position: absolute;
+	right:0;
+	bottom:0;
+	left: 0;
+	padding: 20px;
+	margin-top: 20px;
+	color: #ffffff;
+	background-color: #9FA1CC;
+	text-align: center;
+
+}
+
+/* Media Queries */
+@media(max-width: 768px){
+  header #branding,
+  header nav,
+  header nav li,
+  #boxes .box,{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+
+  header{
+    padding-bottom:20px;
+  }
+
+
+  #showcase h1{
+    margin-top:40px;
+  }
+  .button_1{
+  	display:block;
+  	width:95%;
+  }
+
+  article#main-col .contact input, article#main-col .contact textarea{
+  	width:95%;
+  }
+
+  article#main-col, aside#sidebar{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+
+  footer{
+  	position: static;
+	padding: 20px;
+	margin-top: 20px;
+	color: #ffffff;
+	background-color: #9FA1CC;
+	text-align: center;
+
+}
+
+ }
+
+@media(max-width: 600px){
+
+	header nav li{
+		float:none;
+		width:100%;
+		text-align: center;
+	}
+
+	header #branding{
+  	text-indent: -9000px;
+    background: url('../img/GM_Logo.png') no-repeat top center;
+    background-size: 45px;
+    float: none;
+  }
+
+  .button_1{
+  	display:block;
+  	width:95%;
+  }
+
+  article#main-col .contact input, article#main-col .contact textarea{
+  	width:95%;
+  }
+
+  footer{
+  	position:static;
+	padding: 20px;
+	margin-top: 20px;
+	color: #ffffff;
+	background-color: #9FA1CC;
+	text-align: center;
+
+}
+
+}
