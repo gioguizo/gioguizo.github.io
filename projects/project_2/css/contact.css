@@ -5,7 +5,7 @@
  /*Body*/
 
 body{
-	font:15px/1.5 'Lato', sans-serif;;
+	font:15px/1.5 'Lato', sans-serif;
 	padding: 0;
 	margin: 0;
 	background-color: #f4f4f4;
@@ -14,13 +14,18 @@ body{
 /*Global*/
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Lato', serif;
+  font-family: 'Bree Serif', serif;
 }
 
 .container{
 	width:80%;
 	margin:auto;
 	overflow:hidden;
+}
+
+ul{
+	margin:0;
+	padding:0;
 }
 
 .dark{
@@ -30,12 +35,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-top:10px;
   margin-bottom:10px;
 }
-
-/* removed this due to the list in the resume page
-ul{
-	margin:0;
-	padding:0;
-}*/
 
 /*header*/
 
@@ -51,11 +50,6 @@ header a{
 	color:#ffffff;
 	text-decoration: none;
 	font-size:16px;
-}
-
-header ul{
-	margin:0;
-	padding:0;
 }
 
 header li{
@@ -95,10 +89,10 @@ header a:hover{
 /*Showcase*/
 
 #showcase{
-	min-height:375px;
-	background: url('../img/showcase.jpeg') no-repeat -0 -200px;
+	min-height:400px;
+	background: url('../img/showcase.jpeg') no-repeat 0 -300px;
 	text-align:center;
-	color:#1c1c38;
+	color:#ffffff;
 	/*background-size: cover;*/
 }
 
@@ -121,23 +115,57 @@ header a:hover{
 	text-align:center;
 
 }
-
-#boxes .box img{
-	width:95%;
-}
-
 /*Main Column (main-col)*/
 article#main-col{
-	float:right;
+	float:left;
 	width:65%;
 }
 
 /*Sidebar*/
 
 aside#sidebar{
-	float:left;
+	float:right;
 	width:30%;
+	text-align:center;
 }
+
+aside#sidebar a{
+	text-decoration: none;
+	color:#ffffff;
+}
+/*Form*/
+
+.button_1{
+  height:40px;
+  background:#1c1c38;
+  border:0;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#ffffff;
+  width:20%;
+  border-radius:5px;  
+  margin-top: 10px;
+}
+
+article#main-col .contact input{
+  width:55%;
+  padding:5px;
+  height:25px;
+  margin: 8px 0;
+  border-radius: 5px;
+  border:none;
+  font-size: 15px;
+}
+
+article#main-col .contact textarea{
+	width:55%;
+    padding:5px;
+  height:100px;
+  border-radius: 5px;
+  border:none; 
+  font-size: 15px;
+}
+
 
 
 /*Footer*/
@@ -155,7 +183,7 @@ footer{
   header #branding,
   header nav,
   header nav li,
-  #boxes .box,article#main-col, aside#sidebar{
+  #boxes .box,{
     float:none;
     text-align:center;
     width:100%;
@@ -169,6 +197,30 @@ footer{
   #showcase h1{
     margin-top:40px;
   }
+  .button_1{
+  	display:block;
+  	width:95%;
+  }
+
+  article#main-col .contact input, article#main-col .contact textarea{
+  	width:95%;
+  }
+
+  article#main-col, aside#sidebar{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+
+  footer{
+  	position: static;
+	padding: 20px;
+	margin-top: 20px;
+	color: #ffffff;
+	background-color: #9FA1CC;
+	text-align: center;
+
+}
 
  }
 
@@ -187,10 +239,23 @@ footer{
     float: none;
   }
 
-  #boxes .box,article#main-col, aside#sidebar{
-    float:none;
-    text-align:center;
-    width:100%;
+  .button_1{
+  	display:block;
+  	width:95%;
   }
+
+  article#main-col .contact input, article#main-col .contact textarea{
+  	width:95%;
+  }
+
+  footer{
+  	position:static;
+	padding: 20px;
+	margin-top: 20px;
+	color: #ffffff;
+	background-color: #9FA1CC;
+	text-align: center;
+
+}
 
 }
